@@ -101,12 +101,21 @@ nav strong {
   cursor: pointer;
   transition: background 400ms ease;
 }
-.content__explore:hover {
-  text-decoration: underline;
-  background: rgba(0, 0, 0, 0.5);
+.content__explore::after {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  left: 50%;
+  transform: translate(-50%, 5%) scale(0);
+  transition: all 400ms ease-in;
 }
-.content__explore:hover > a {
-  color: #fff;
+.content__explore:hover::after {
+  border: 2px solid #000;
+  transform: translate(-50%, 5%) scale(1);
+  transition: all 400ms ease-out;
 }
 .content__explore a {
   color: #000;
