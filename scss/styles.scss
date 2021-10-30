@@ -36,10 +36,16 @@ a {
     flex: 1;
   }
 }
-
+@supports (backdrop-filter: opacity(1)) {
+  .no-support {
+    display: none;
+  }
+}
 nav {
   background-color: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  -moz-backdrop-filter: blur(15px);
   ul {
     margin: 0;
   }
@@ -97,8 +103,9 @@ nav {
     cursor: pointer;
     transition: all 400ms ease;
     &:hover {
-      background-color: rgba(255, 255, 255, 0.15);
+      background-color: rgba(0, 0, 0, 0.4);
       backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
     }
     &:hover a {
       color: #fff;
