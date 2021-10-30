@@ -10,12 +10,41 @@ body {
   min-height: 100vh;
   color: #fff;
   font-family: "Maven Pro", sans-serif;
+}
+
+#home {
   background: url("../assets/home/background-home-desktop.jpg") no-repeat center/cover;
 }
 @media (max-width: 599px) {
-  html,
-body {
+  #home {
     background: url("../assets/home/background-home-mobile.jpg") no-repeat center/cover;
+  }
+}
+
+#dest {
+  background: url("../assets/destination/background-destination-desktop.jpg") no-repeat center/cover;
+}
+@media (max-width: 599px) {
+  #dest {
+    background: url("../assets/destination/background-destination-mobile.jpg") no-repeat center/cover;
+  }
+}
+
+#crew {
+  background: url("../assets/crew/background-crew-desktop.jpg") no-repeat center/cover;
+}
+@media (max-width: 599px) {
+  #crew {
+    background: url("../assets/crew/background-crew-mobile.jpg") no-repeat center/cover;
+  }
+}
+
+#tech {
+  background: url("../assets/technology/background-technology-desktop.jpg") no-repeat center/cover;
+}
+@media (max-width: 599px) {
+  #tech {
+    background: url("../assets/technology/background-technology-mobile.jpg") no-repeat center/cover;
   }
 }
 
